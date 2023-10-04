@@ -1,10 +1,8 @@
 package org.stack;
 
-public class Stack {
-    public void push(int i) {
-    }
+public interface Stack<T> {
+    void push(T element);
+    T pop();
+    int size();
 
-    public int pop() {
-        return 2;
-    }
 }
