@@ -36,6 +36,8 @@ public class TestIntegerStack {
         intStack.push(1);
         intStack.pop();
         intStack.push(2);
+        intStack.pop();
+        intStack.push(3);
 
         assertEquals(1, intStack.size());
     }
