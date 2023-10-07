@@ -20,4 +20,15 @@ public class TestIntegerStack {
         assertEquals (intStack.pop(), 2);
     }
 
+    @Test
+    void pushThreeObjectAndCheckSize(){
+        intStack = new StackImpl<Integer>();
+        intStack.push(1);
+        intStack.push(2);
+        intStack.push(3);
+
+        assertEquals(intStack.size(), 3);
+    }
+
+
 }
