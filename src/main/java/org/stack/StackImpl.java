@@ -12,6 +12,7 @@ public class StackImpl<T> implements Stack<T> {
     @Override
     public void push(T element) {
         stackStore = element;
+        ++stackSize;
     }
 
     @Override
@@ -21,6 +22,6 @@ public class StackImpl<T> implements Stack<T> {
 
     @Override
     public int size() {
-        return 0;
+        return stackSize;
     }
 }
