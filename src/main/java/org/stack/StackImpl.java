@@ -17,6 +17,7 @@ public class StackImpl<T> implements Stack<T> {
 
     @Override
     public T pop() {
+        --stackSize;
         return stackStore;
     }
 

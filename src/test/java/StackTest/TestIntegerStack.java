@@ -27,8 +27,18 @@ public class TestIntegerStack {
         intStack.push(2);
         intStack.push(3);
 
-        assertEquals(intStack.size(), 3);
+        assertEquals(3, intStack.size());
     }
 
+    @Test
+    void pushAndPopCheckSize(){
+        intStack = new StackImpl<Integer>();
+        intStack.push(1);
+        intStack.pop();
+        intStack.push(2);
+        intStack.pop();
+        intStack.push(3);
 
+        assertEquals(1, intStack.size());
+    }
 }
