@@ -1,8 +1,8 @@
 package StackTest;
 
 import org.junit.jupiter.api.Test;
-import org.stack.Stack;
-import org.stack.StackImpl;
+import mystack.Stack;
+import mystack.StackImpl;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -41,4 +41,6 @@ public class TestIntegerStack {
 
         assertEquals(1, intStack.size());
     }
+
+
 }
