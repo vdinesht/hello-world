@@ -1,4 +1,4 @@
-package org.stack;
+package mystack;
 
 public class StackImpl<T> implements Stack<T> {
 
